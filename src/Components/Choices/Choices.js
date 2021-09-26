@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Cart from "../Cart/Cart";
 import Character from "../Character/Character";
 
 const Choices = () => {
@@ -9,13 +10,19 @@ const Choices = () => {
       .then((data) => setCharacters(data));
   }, []);
   return (
-    <div>
-      <div className="characters row row-cols-lg-3 row-cols-md-3 row-cols-1">
-        {characters.map((character) => (
-          <Character key={character.key} character={character}></Character>
-        ))}
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-8 col-md-9">
+          <div className="row">
+            {characters.map((character) => (
+              <Character key={character.key} character={character}></Character>
+            ))}
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-3">
+          <Cart></Cart>
+        </div>
       </div>
-      <div className="cart"></div>
     </div>
   );
 };
