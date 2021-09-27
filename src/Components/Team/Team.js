@@ -33,17 +33,17 @@ const Cart = (props) => {
     <div>
       <div className="card">
         <div className="card-body text-left">
-          <h5 className="card-title">
+          <h3 className="card-title">
             {userIcon} Current Team Members:{" "}
             <span className="text-success">{addedMembers.size}</span>
-          </h5>
-          <h5 className="card-text">
+          </h3>
+          <h4 className="card-text">
             {dollarIcon} Current Cost of Team:{" "}
             <span className="text-success">${totalCost}</span>
-          </h5>
+          </h4>
         </div>
         <div className="card-body">
-          <h3>{clipBoardIcon} Characters Added on the team: </h3>
+          <h4>{clipBoardIcon} Characters Added on the team: </h4>
           <ul className="list-group list-group-flush">
             {uniqueMembers.map((detail) => (
               <li className="list-group-item">
