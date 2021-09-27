@@ -1,11 +1,14 @@
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Character.css";
 
 const Character = (props) => {
   const { name, age, role, img, price, height } = props.character;
+  const addToTeamIcon = <FontAwesomeIcon icon={faUserPlus} />;
   return (
     <div className="col-lg-4 col-md-6">
-      <div className="card mb-2 rounded">
+      <div className="card mb-2 rounded shadow">
         <img
           src={img}
           className="image-size card-img-top text-center img-fluid mx-auto"
@@ -23,7 +26,7 @@ const Character = (props) => {
               className="btn btn-success"
               onClick={() => props.handleAddToTeam(props.character)}
             >
-              Add To Team
+              {addToTeamIcon} Add To Team
             </button>
           </div>
         </div>

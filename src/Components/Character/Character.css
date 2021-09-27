@@ -4,3 +4,7 @@
   border-radius: 100px;
   margin-top: 7px;
 }
+
+.shadow {
+  box-shadow: 5px 5px 3px green;
+}

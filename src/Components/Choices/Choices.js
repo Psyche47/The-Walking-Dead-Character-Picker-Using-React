@@ -16,8 +16,9 @@ const Choices = () => {
     const newTeam = [...team, character];
     setTeam(newTeam);
   };
+
   return (
-    <div className="container">
+    <div className="container mt-3">
       <div className="row">
         <div className="col-lg-8 col-md-9">
           <div className="row">
