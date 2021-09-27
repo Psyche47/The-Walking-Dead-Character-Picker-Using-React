@@ -6,7 +6,7 @@
 
 #### Contents of the site:
 
-- Data such as Name,Role,Price, etc of characters from the Walking dead from the custom built API.
+- Data such as Name, Role, Price, etc of characters from the Walking dead from the custom built JSON file.
 - Users can view the information of these characters and add users into their own team.
 
 - On the right side, the information the team(number of members added, used budget, list of members added) will be displayed.
