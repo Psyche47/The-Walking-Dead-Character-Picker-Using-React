@@ -18,7 +18,11 @@ const Character = (props) => {
           <h5 className="card-text">Height: {height}</h5>
           <h5 className="card-text">Price: ${price}</h5>
           <div className="text-center mt-3">
-            <button type="button" className="btn btn-success">
+            <button
+              type="button"
+              className="btn btn-success"
+              onClick={() => props.handleAddToTeam(props.character)}
+            >
               Add To Team
             </button>
           </div>
